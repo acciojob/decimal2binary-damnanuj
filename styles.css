@@ -1,1 +1,9 @@
-/*  your css code here. If applicable */
+const decimalInput = prompt("Enter a decimal number:");
+const decimalNumber = parseInt(decimalInput);
+
+if (!isNaN(decimalNumber)) {
+  const binaryNumber = decimalNumber.toString(2);
+  console.log(`The binary representation of ${decimalNumber} is ${binaryNumber}`);
+} else {
+  console.log("Invalid input. Please enter a valid decimal number.");
+}
